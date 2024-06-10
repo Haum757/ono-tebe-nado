@@ -57,12 +57,19 @@
 }
 
 .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  opacity: 0.6;
+  position:relative;
   z-index: 1;
 }
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+} 
 
 .cover {
   display: flex;
@@ -178,17 +185,6 @@
   background-size: cover;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
 .card-link {
   height: 100%;
   display: block;
@@ -208,8 +204,6 @@
 .card__text {
   z-index: 1;
 }
-
-/* использовал для затемнения псевдоэлемент потомучто хотел попробовать что то новое(не бейте палками,секцию cover делал через оверлей) */
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
