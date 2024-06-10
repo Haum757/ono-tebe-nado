@@ -75,7 +75,6 @@
   display: flex;
   flex-direction: column;
   padding: 165px 50px 50px;
-  position: relative;
   background-image: url(../images/cover.jpg);
   color: #fff;
   background-size: cover;
@@ -88,7 +87,6 @@
   margin-bottom: 135px;
   font-weight: 700;
   font-size: 100px;
-  z-index: 1;
 }
 
 .aligned-text {
@@ -124,7 +122,6 @@
   justify-content: flex-end;
   align-items: center;
   gap: 79px;
-  z-index: 1;
 }
 
 .cover__description-text {
@@ -180,7 +177,6 @@
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.001em;
-  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
 }
