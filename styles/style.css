@@ -188,7 +188,6 @@
 }
 
 .card__title {
-  z-index: 1;
   line-height: 1.2em;
   text-underline-offset: 2px;
   font-weight: 700;
@@ -198,7 +197,7 @@
 }
 
 .card__text {
-  z-index: 1;
+
 }
 
 .card_type_film {
